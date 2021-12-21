@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function main(){
+			var x=document.getElementById('x').value;
+			var l=1;
+			var res=0;
+			var count = document.getElementById('count').value;
+			for (i=0;i<count;i++){
+                res+=1/(l*Math.pow(x,l));
+                l+=2
+            }
+            res*=2
+            document.writeln("Ответ: " + res);
+		}
+        res*=2
+	</script>
+</head>
+<form onsubmit="main()">
+	<p>Введите значение x</p>
+	<p><input type ="text" id="x" value="1"></p>
+	<p>Введите количество итераций</p>
+	<p><input type="text" id="count" value="5"></p>
+	<p><input type="submit"></p>
+</form>
+<body>
+
+</body>
+</html>
